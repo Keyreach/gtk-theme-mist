@@ -33,6 +33,34 @@
     border-color: @border_color;
     border-style: solid;
 }
+/* CSD fixes by ake */
+GtkWindow {
+    color: @fg_color;
+    background-color: @bg_color;
+}
+
+GtkPaned {
+    background-color: @bg_color;
+}
+
+GtkWindow:backdrop {
+    color: @fg_color;
+}
+
+.titlebar {
+	padding: 4px;
+	background-color: @bg_color;
+}
+
+.titlebar .titlebutton, .titlebar .button {
+    padding: 5px;
+    icon-shadow: none;
+}
+
+
+.window-frame {
+	outline: 1px solid #404040;
+}
 
 *:hover
 {
@@ -504,7 +532,7 @@ GtkComboBox .button
 
 .notebook tab
 {
-    padding: 3px;
+    padding: 4px;
     background-color: mix(@fg_color, @bg_color, 0.9);
 }
 
